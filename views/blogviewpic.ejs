@@ -1,0 +1,33 @@
+<%- include blogheader %>
+<%- include blogsubheader %>
+
+<script src="javascripts/prefixfree.min.js"></script>
+<link rel="stylesheet" href="stylesheets/viewpic.css">
+<div class="main-container">
+	<div class="coverflow-container" style="margin-top: 150px">
+		<ol class="coverflow-list">
+			<!-- Cover item -->
+			<% files.forEach(function(file, index){ %>
+				<% var idStr = "cover-" + index %>
+				<input type="radio" name="cover-item" id=<%= idStr %>>
+				<li class="coverflow-item">
+					<label for=<%= idStr %>>
+						<figure class="album-cover">
+							<% var srcPath = "images/upload/" + file %>
+							<img src=<%= srcPath %>>
+							<figcaption class="album-name"><%= file %></figcaption>
+						</figure>
+					</label>
+				</li>
+			<% }) %>
+		</ol>
+	</div>
+	<div class="controls">
+		<% files.forEach(function(file, index){ %>
+			<% idStr = "cover-" + index %>
+			<label for=<%= idStr %>><%= index+1 %></label>
+		<% }) %>
+	</div>
+</div>
+
+<%- include blogfooter %>

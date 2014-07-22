@@ -1,0 +1,14 @@
+<%- include blogheader %>
+<%- include blogsubheader %>
+<ul class="blog--achieve">
+	<% var lastyear = 0 %>
+	<% post.forEach(function(post, index){ %>
+		<% if lastyear != post.time.year { %>
+			<li><h3><%= post.time.year %></h3></li>
+			<% lastyear = post.time.year %>
+		<% } %>
+		<li><time><%= post.time.day %></time></li>
+    	<li><a href="#"><%= post.title %></a></li>
+	<% }) %> 
+</ul>
+<%- include blogfooter %>

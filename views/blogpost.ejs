@@ -1,0 +1,24 @@
+<%- include blogheader %>
+<%- include blogsubheader %>
+<link rel="stylesheet" href="stylesheets/post.css">
+<div class="blog--post__panel">
+	<div id="blog--post__content">
+		<form method="post">
+			标题：<br>
+			<input type="text" name="title"><br>
+			标签：<br>
+			<div class="blog--post__tag-panel" style=" display: -webkit-box; -webkit-box-flex: 1; margin-bottom: 30px; ">
+				<div><input type="text" name="tag1"></div>
+				<div><input type="text" name="tag2"></div>
+				<div><input type="text" name="tag3"></div>
+				<br>
+			</div>
+			正文：<br>
+			<div style="width: 100%"><textarea name="post" rows="20" cols="100"></textarea></div> <br />
+			<div style="width: 70%; margin-left: 15%;">
+				<input type="submit" value="发表">
+			</div>
+		</form>
+	</div>
+</div>
+<%- include blogfooter %>

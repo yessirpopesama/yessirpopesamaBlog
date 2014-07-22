@@ -1,0 +1,80 @@
+[Tue Jul 22 2014 15:43:25 GMT+0800 (中国标准时间)] /
+TypeError: E:\nodejs\node_programe\NBlog\views\index.ejs:71
+    69|       <h6 class="sidebartitle">POPULAR POSTS</h6>
+    70|       <p>
+ >> 71|       <%= popPosts.time.day %>
+    72|       </p>
+    73|       <p> <%= popPosts.title %> </p>
+    74|       <p>
+
+Cannot read property 'day' of undefined
+    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:33:2950)
+    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:35:35)
+    at E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:255:15
+    at Object.exports.render (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:293:13)
+    at View.exports.renderFile [as engine] (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:323:20)
+    at View.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\response.js:798:7)
+    at E:\nodejs\node_programe\NBlog\routes\index.js:43:9
+    at E:\nodejs\node_programe\NBlog\models\post.js:190:5
+[Tue Jul 22 2014 15:46:48 GMT+0800 (中国标准时间)] /
+TypeError: E:\nodejs\node_programe\NBlog\views\index.ejs:71
+    69|       <h6 class="sidebartitle">POPULAR POSTS</h6>
+    70|       <p>
+ >> 71|       <%= popPosts.time.year %>
+    72|       </p>
+    73|       <p> <%= popPosts.title %> </p>
+    74|       <p>
+
+Cannot read property 'year' of undefined
+    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:33:2950)
+    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:35:35)
+    at E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:255:15
+    at Object.exports.render (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:293:13)
+    at View.exports.renderFile [as engine] (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:323:20)
+    at View.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\response.js:798:7)
+    at E:\nodejs\node_programe\NBlog\routes\index.js:43:9
+    at E:\nodejs\node_programe\NBlog\models\post.js:190:5
+[Tue Jul 22 2014 15:48:19 GMT+0800 (中国标准时间)] /
+TypeError: E:\nodejs\node_programe\NBlog\views\index.ejs:71
+    69|       <h6 class="sidebartitle">POPULAR POSTS</h6>
+    70|       <p>
+ >> 71|       <%= popPosts.time.year %>
+    72|       </p>
+    73|       <p> <%= popPosts.title %> </p>
+    74|       <p>
+
+Cannot read property 'year' of undefined
+    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:33:2950)
+    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:35:35)
+    at E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:255:15
+    at Object.exports.render (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:293:13)
+    at View.exports.renderFile [as engine] (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:323:20)
+    at View.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\response.js:798:7)
+    at E:\nodejs\node_programe\NBlog\routes\index.js:44:9
+    at E:\nodejs\node_programe\NBlog\models\post.js:190:5
+[Tue Jul 22 2014 15:48:32 GMT+0800 (中国标准时间)] /
+TypeError: E:\nodejs\node_programe\NBlog\views\index.ejs:71
+    69|       <h6 class="sidebartitle">POPULAR POSTS</h6>
+    70|       <p>
+ >> 71|       <%= popPosts.time.year %>
+    72|       </p>
+    73|       <p> <%= popPosts.title %> </p>
+    74|       <p>
+
+Cannot read property 'year' of undefined
+    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:33:2950)
+    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:35:35)
+    at E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:255:15
+    at Object.exports.render (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:293:13)
+    at View.exports.renderFile [as engine] (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:323:20)
+    at View.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\view.js:76:8)
+    at Function.app.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\application.js:504:10)
+    at ServerResponse.res.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\response.js:798:7)
+    at E:\nodejs\node_programe\NBlog\routes\index.js:44:9
+    at E:\nodejs\node_programe\NBlog\models\post.js:190:5
