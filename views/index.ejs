@@ -21,7 +21,7 @@
         <!-- 正文内容 -->
         <p>
           <% var tmpPost = post.post.toString().replace(/<[^>]+>/g,'').substring(0,200) %>
-          <%= tmpPost %>... <a title="单独文章" href="/p/<%= post._id %>" class="saymore">Read more</a>
+          <%= tmpPost %>... <a href="/p/<%= post._id %>" class="saymore">Read more</a>
         </p>
         <div class="hr"></div>
       <% }) %>           

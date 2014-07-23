@@ -267,13 +267,9 @@ module.exports = function(app) {
 				req.flash('error', err);
 				return res.redirect('/');
 			}
-			console.log(post.post);
 			res.render('blogarticle', {
-				title: "单独文章",
 				post: post,
-				user: req.session.user,
-				success: req.flash('success').toString(),
-				error: req.flash('error').toString()
+				user: req.session.user
 			});
 		});
 	});

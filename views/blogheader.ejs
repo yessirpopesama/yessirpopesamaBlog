@@ -15,9 +15,10 @@
     <link rel="stylesheet" href="stylesheets/blog.css"><!-- blog stylesheet -->
     <link rel="stylesheet" href="stylesheets/skins/teal.css"><!-- skin color -->
     <link rel="stylesheet" href="stylesheets/responsive.css">
+    <link rel="stylesheet" href="stylesheets/zerogrid.css">
     <script charset="utf-8" src="/kindeditor/kindeditor-min.js"></script>
     <script charset="utf-8" src="/kindeditor/lang/zh_CN.js"></script>
-        <!-- JAVASCRIPTS
+    <!-- JAVASCRIPTS
     ================================================== -->
     <!-- Javascript files placed here for faster loading -->
     <script src="javascripts/foundation.min.js"></script>
@@ -28,18 +29,18 @@
     <script src="javascripts/hoverIntent.js"></script>
     <script src="javascripts/responsivemenu.js"></script>
     <script>
-      var editor;
-      KindEditor.ready(function(K) {
-        editor = K.create('textarea', {
-          width: '700px',
-          allowImageUpload: false,
-          items: [
-            'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic',
-            'underline', 'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright',
-            'insertorderedlist', 'insertunorderedlist', '|', 'emoticons', 'image', 'link'
-          ]
-        });
-      });
+    var editor;
+    KindEditor.ready(function(K) {
+    editor = K.create('textarea', {
+    width: '700px',
+    allowImageUpload: false,
+    items: [
+    'fontname', 'fontsize', '|', 'forecolor', 'hilitecolor', 'bold', 'italic',
+    'underline', 'removeformat', '|', 'justifyleft', 'justifycenter', 'justifyright',
+    'insertorderedlist', 'insertunorderedlist', '|', 'emoticons', 'image', 'link'
+    ]
+    });
+    });
     </script>
     <!-- IE Fix for HTML5 Tags -->
     <!--[if lt IE 9]>
@@ -54,7 +55,7 @@
         <div class="twelve columns">
           <img src="images/info.png" class="pics" alt="info">
           <div class="infotext">
-            Thank you for visiting ! Version 0.006
+            Thank you for visiting ! Version 0.007
           </div>
         </div>
       </div>
@@ -64,58 +65,27 @@
     </p>
     <!-- HEADER
     ================================================== -->
-    <div class="row">
+    <div class="row blog--header">
       <div class="four columns">
         <div class="logo">
-          <h4>YSP的吐槽小屋</h4>
+          <h4 style="color: white;">YSP的吐槽小屋</h4>
         </div>
       </div>
-      <div class="eight columns noleftmarg">
-        <nav id="nav-wrap">
-          <ul class="nav-bar sf-menu">
-            
-            <!-- Home
-            ============================================ -->
-            <li class="current">
-              <a title="首页"href="/">首页</a>
-            </li>
-            
-            <!-- Achive
-            ============================================ -->
-            <li>
-              <a title="博客存档" href="/achive">博客存档</a>
-            </li>
-
-            <!-- View Picture
-            ============================================ -->
-            <li>
-              <a title="图片墙" href="/viewpic">图片墙</a>
-            </li>
-            
-            <!-- User ManageMent
-            ============================================ -->
-            <li>
-              <% if (user) { %>
-              <a href="#">用户管理</a>
-              <ul>
-                <li><a title="发表" href="/post">发表博文</a></li>
-                <li><a title="上传" href="/upload">图片上传</a></li>
-                <li><a title="登出" href="/logout">登出</a></li>
-              </ul>
-              
-              <% } else { %>
-              <a title="登录" href="/login">登录</a>
-              <% } %>
-            </li>
-            
-            <!-- New Commer Register
-            ============================================ -->
-            <li>
-              <% if (!user) { %>
-              <a title="注册" href="/reg">注册</a>
-              <% } %>
-            </li>
-            
+      <div class="eight columns noleftmarg" style="margin-top: 20px">
+        <nav style="float: right;">
+          <ul class="fancyNav">
+            <!--======== Navigator ======== -->
+            <li id="home"><a href="/" class="homeIcon" title="首页">首页</a></li>
+            <li id="achive"><a href="/achive" title="博客存档">博客存档</a></li>
+            <li id="picture"><a href="/viewpic" title="图片墙">图片墙</a></li>
+            <% if (user) { %>
+            <li id="post"><a title="发表" href="/post">发表博文</a></li>
+            <li id="upload"><a title="上传" href="/upload">图片上传</a></li>
+            <li id="logout"><a title="登出" href="/logout">登出</a></li>
+            <% } else { %>
+            <li id="login"><a title="登录" href="/login">登录</a></li>
+            <li id="reg"><a title="注册" href="/reg">注册</a></li>
+            <% } %>
           </ul>
         </nav>
       </div>

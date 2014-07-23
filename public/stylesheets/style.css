@@ -1485,116 +1485,6 @@ div.button-bar ul.button-group:last-child {
 	margin-left: 0
 }
 
-/* Requires globals.css */
-.nav-bar {
-	height: 40px;
-	margin-top: 30px;
-	padding: 0;
-}
-.nav-bar > li {
-	float: left;
-	display: block;
-	position: relative;
-	padding: 0;
-	margin: 0 7px 0 0;
-	line-height: 40px;
-}
-.nav-bar > li:first-child {
-	background: none
-}
-.nav-bar > li:last-child {
-}
-.nav-bar > li.active {
-}
-.nav-bar > li.active > a {
-	cursor: pointer
-}
-.nav-bar > li.active:hover {
-	cursor: default
-}
-.nav-bar > li:hover {
-}
-.nav-bar > li > a {
-	color: #555
-}
-.nav-bar > li ul {
-	margin-bottom: 0
-}
-.nav-bar > li .flyout {
-	display: none
-}
-.nav-bar > li.has-flyout > a:first-child {
-	position: relative
-}
-.nav-bar > li.has-flyout > a:first-child:after {
-	content: "";
-	display: block;
-	width: 0;
-	height: 0;
-	position: absolute;
-	right: 0px;
-	top: 0px;
-}
-.nav-bar > li.has-flyout > a.flyout-toggle {
-	background: none;
-	border-left: 0 !important;
-	position: absolute;
-	right: 0;
-	top: 0;
-	padding: 20px;
-	z-index: 2;
-	display: block;
-}
-.nav-bar > li.has-flyout.is-touch > a:first-child {
-	padding-right: 55px
-}
-.nav-bar > li.has-flyout.is-touch > a.flyout-toggle {
-	border-left: 1px dashed #666
-}
-.nav-bar > li > a:first-child {
-	position: relative;
-	padding: 0 11px;
-	display: block;
-	text-decoration: none;
-	font-size: 14px;
-}
-.nav-bar > li > input {
-	margin: 0 10px
-}
-.nav-bar.vertical {
-	height: auto;
-	margin-top: 0;
-}
-.nav-bar.vertical > li {
-	float: none;
-	border-bottom: none;
-	border-right: solid 1px #333333;
-	-webkit-box-shadow: none;
-	-moz-box-shadow: none;
-	box-shadow: none;
-}
-.nav-bar.vertical > li.has-flyout > a:first-child:after {
-	content: "";
-	display: block;
-	width: 0;
-	height: 0;
-	border: solid 4px;
-	border-color: transparent transparent transparent #e6e6e6;
-}
-.nav-bar.vertical > li .flyout {
-	left: 100%;
-	top: -1px;
-}
-.nav-bar.vertical > li .flyout.right {
-	left: auto;
-	right: 100%;
-}
-.nav-bar.vertical > li.active {
-	border-right: solid 1px #2284a1
-}
-.nav-bar.vertical > li:last-child {
-	border-bottom: solid 1px #333333
-}
 .flyout {
 	background: #fff;
 	nowhitespace: afterproperty;
@@ -3073,11 +2963,12 @@ a:focus {
 	height: 80px
 }
 .logo {
-	margin-top: 34px;
+	margin-top: 44px;
 	margin-bottom: 30px;
+	margin-left: 40px;
 }
 .logo h4 {
-	font-size: 27px
+	font-size: 27px;
 }
 .hr {
 	height: 36px
@@ -3734,6 +3625,12 @@ a:focus {
 	list-style: none;
 	line-height: 28px;
 	height: 470px;
+	width: 400px;
+  	margin: 0 auto;
+  	margin-top: 70px;
+  	margin-bottom: 2%;
+	transition: opacity 1s;
+	-webkit-transition: opacity 1s;
 }
 .blog--reg {
 	list-style: none;
@@ -3744,3 +3641,154 @@ a:focus {
 	list-style: none;
 	line-height: 18px;
 }
+
+.blog--header {
+	background: #333333;
+	width: 100%;
+	max-height: 103px;
+}
+
+
+/*----------------------------
+	CSS3 Animated Navigation
+-----------------------------*/
+.fancyNav{
+	/* Affects the UL element */
+	overflow: hidden;
+	display: inline-block;
+}
+
+.fancyNav li{
+	/* Specifying a fallback color and we define CSS3 gradients for the major browsers: */
+	
+	background-color: #f0f0f0;
+	background-image: -webkit-gradient(linear,left top, left bottom,from(#fefefe), color-stop(0.5,#f0f0f0), color-stop(0.51, #e6e6e6));
+	background-image: -moz-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	background-image: -o-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	background-image: -ms-linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	background-image: linear-gradient(#fefefe 0%, #f0f0f0 50%, #e6e6e6 51%);
+	
+	border-right: 1px solid rgba(9, 9, 9, 0.125);
+	
+	/* Adding a 1px inset highlight for a more polished efect: */
+	
+	box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+	-moz-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+	-webkit-box-shadow: 1px -1px 0 rgba(255, 255, 255, 0.6) inset;
+	
+	position:relative;
+	
+	float: left;
+	list-style: none;
+}
+
+.fancyNav li:after{
+
+	/* This creates a pseudo element inslide each LI */	
+	
+	content:'.';
+	text-indent:-9999px;
+	overflow:hidden;
+	position:absolute;
+	width:100%;
+	height:100%;
+	top:0;
+	left:0;
+	z-index:1;
+	opacity:0;
+	
+	/* Gradients! */
+	
+	background-image:-webkit-gradient(linear, left top, right top, from(rgba(168,168,168,0.5)),color-stop(0.5,rgba(168,168,168,0)), to(rgba(168,168,168,0.5)));
+	background-image:-moz-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+	background-image:-o-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+	background-image:-ms-linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+	background-image:linear-gradient(left, rgba(168,168,168,0.5), rgba(168,168,168,0) 50%, rgba(168,168,168,0.5));
+	
+	/* Creating borders with box-shadow. Useful, as they don't affect the size of the element. */
+	
+	box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+	-moz-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+	-webkit-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff,1px 0 0 #a3a3a3,2px 0 0 #fff;
+	
+	/* This will create a smooth transition for the opacity property */
+	
+	-moz-transition:0.25s all;
+	-webkit-transition:0.25s all;
+	-o-transition:0.25s all;
+	transition:0.25s all;
+}
+
+/* Treating the first LI and li:after elements separately */
+
+.fancyNav li:first-child{
+	border-radius: 4px 0 0 4px;
+}
+
+.fancyNav li:first-child:after,
+.fancyNav li.selected:first-child:after{
+	box-shadow:1px 0 0 #a3a3a3,2px 0 0 #fff;
+	-moz-box-shadow:1px 0 0 #a3a3a3,2px 0 0 #fff;
+	-webkit-box-shadow:1px 0 0 #a3a3a3,2px 0 0 #fff;
+	
+	border-radius:4px 0 0 4px;
+}
+
+.fancyNav li:last-child{
+	border-radius: 0 4px 4px 0;
+}
+
+/* Treating the last LI and li:after elements separately */
+
+.fancyNav li:last-child:after,
+.fancyNav li.selected:last-child:after{
+	box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff;
+	-moz-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff;
+	-webkit-box-shadow:-1px 0 0 #a3a3a3,-2px 0 0 #fff;
+	
+	border-radius:0 4px 4px 0;
+}
+
+.fancyNav li:hover:after,
+.fancyNav li.selected:after,
+.fancyNav li:target:after{
+	/* This property triggers the CSS3 transition */
+	opacity:1;
+}
+
+.fancyNav:hover li.selected:after,
+.fancyNav:hover li:target:after{
+	/* Hides the targeted li when we are hovering on the UL */
+	opacity:0;
+}
+
+.fancyNav li.selected:hover:after,
+.fancyNav li:target:hover:after{
+	opacity:1 !important;
+}
+
+/* Styling the anchor elements */
+
+.fancyNav li a{
+	color: #5d5d5d;
+	display: inline-block;
+	font: 20px/1 Lobster,Arial,sans-serif;
+	padding: 12px 35px 14px;
+	position: relative;
+	text-shadow: 1px 1px 0 rgba(255, 255, 255, 0.6);
+	z-index:2;
+	text-decoration:none !important;
+	white-space:nowrap;
+}
+
+.fancyNav a.homeIcon{
+	background:url('../images/common/home.png') no-repeat center center;
+	display: block;
+	overflow: hidden;
+	padding-left: 12px;
+	padding-right: 12px;
+	text-indent: -9999px;
+	width: 16px;
+}
+
+
