@@ -1,2 +1,13 @@
-自己根据nswbmw大牛的博客模板写的第一个nodejs项目，采用express+ejs+nodejs的开发框架，已部署到mongodbHQ和heroku平台，访问连接地址：http://yessirpopesamablog.herokuapp.com/
-初步试水作，望多多包涵。
+### PreFace ###
+  My first nodejs Project followed by Pro.nswbnw. It's constructed by express + node.js + mongodb and it has been deployed in the platform of mongoHQ and heroku.
+
+### BlogWebsite ###
+http://yessirpopesamablog.herokuapp.com/
+
+### Deployement ###：
+1 https://github.com/yessirpopesama/yessirpopesamaBlog.git
+2 install node.js
+3 npm install -g supervisor
+4 supervisor app
+
+Welcome to fork and improve the project~.~

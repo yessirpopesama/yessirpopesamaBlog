@@ -6,26 +6,28 @@
   <div class="twelve columns noleftmargin">
     
     <!-- MAIN CONTENT -->
-    <div class="eight columns noleftmargin">  
+    <div class="eight columns noleftmargin">
       
       <!-- 文章区显示 -->
       <% posts.forEach(function(post, index){ %>
+      <div class="blog--post__context">
         <div class="circledate">
           <div class="textcircle">
             - <%= post.time.date.getDate() %>- <br/> <%= post.monthToStr %> <br/><%= post.time.year%>
           </div>
         </div>
-        <h4><%= post.title %><span class="comments"><%= post.comments.length %> comments</span></h4>
+        <h4 style="color: #390"><%= post.title %></h4>
         <!-- 分割线 -->
-          <div class="dots blogdots"></div>
+        <div class="dots blogdots"></div>
         <!-- 正文内容 -->
         <p>
-          <% var tmpPost = post.post.toString().replace(/<[^>]+>/g,'').substring(0,200) %>
-          <%= tmpPost %>... <a href="/p/<%= post._id %>" class="saymore">Read more</a>
+        <% var tmpPost = post.post.toString().replace(/<[^>]+>/g,'').substring(0,200) %>
+        <%= tmpPost %>... <a href="/p/<%= post._id %>" class="saymore">Read more</a>
         </p>
         <div class="hr"></div>
-      <% }) %>           
-     
+      </div>
+      <% }) %>
+      
       <!-- 分页区 暂时不做 留坑 -->
     </div>
     
@@ -50,34 +52,31 @@
       
       <!-- Tag part -->
       <h6 class="sidebartitle">ALL TAGS</h6>
-      <% var tags = [] %> 
+      <% var tags = [] %>
       <% posts.forEach(function(post, index){ %>
-          <% var perPost = posts[index] %>
-          <% post.tags.forEach(function(tag, index){ %>
-            <% if (tag) { %>
-              <% if (tags.indexOf(tag) === -1) { %>
-                <a class="tags" href="#"><%= tag %></a>
-                <% tags.push(tag) %>
-              <% } %>
-            <% } %>
-          <% }) %>
+      <% var perPost = posts[index] %>
+      <% post.tags.forEach(function(tag, index){ %>
+      <% if (tag) { %>
+      <% if (tags.indexOf(tag) === -1) { %>
+      <a class="tags" href="#"><%= tag %></a>
+      <% tags.push(tag) %>
+      <% } %>
+      <% } %>
+      <% }) %>
       <% }) %>
       <br class="clear"/>
       <br/><br/>
-
       <!-- MOST POPULAR POST -->
       <h6 class="sidebartitle">POPULAR POSTS</h6>
       <% popPosts.forEach(function(popPost, index){ %>
-          <% if (index < 4) { %>
-            <p><%= popPosts[index].time.day %></p>
-            <p><a href="/p/<%= popPost._id %>"><%= popPosts[index].title %></a></p>
-          <% } %>
+      <% if (index < 4) { %>
+      <p><%= popPosts[index].time.day %></p>
+      <p><a href="/p/<%= popPost._id %>"><%= popPosts[index].title %></a></p>
+      <% } %>
       <% }) %>
-
     </div>
   </div>
 </div>
 <div class="hr">
 </div>
-
 <%- include blogfooter %>
