@@ -1,17 +1,27 @@
 <%- include blogheader %>
 <%- include blogsubheader %>
-<p class="info">
-  作者：<a href="/u/<%= post.name %>"><%= post.name %></a> | 
-  日期：<%= post.time.minute %> |
-  标签: 
-  <% post.tags.forEach(function(tag, index) { %>
-    <% if (tag) {  %>
-      <a class="tag" href="/tags/<%= tag %>"><%= tag %></a>
-  <% } %>
-  <% }) %>
-</p>
-<p><%- post.post %></p>
-<p class="info">阅读：<%= post.pv %> </p>
-
-<%- include comment %>
+<div class="row">
+	<div class="twelve columns noleftmargin">
+		<!-- MAIN CONTENT -->
+		<div style="width: 100%;">
+			<div class="panel">
+				<div class="avatar" style="margin-left: 10px;">
+					<img src="/images/temp/author1.png" alt="">
+				</div>
+				<h5 class="left">AUTHOR: <%= post.name %></h5>
+				<p class="clear authortext">
+				<%= post.name %> upgraded GitHub Pages to support the latest version of Jekyll, the open source static site generator. Whether you're a new user or a savvy veteran, here are a few features that might help make publishing your next site a bit easier.<br>
+				<div style="margin-left: 10px;">POST TIME: <%= post.time.minute %></div>
+				<% post.tags.forEach(function(tag, index) { %>
+				<% if (tag) {  %>
+				<div style="margin-left: 10px;">标签: <%= tag %></div>
+				<% } %>
+				<% }) %><div style="margin-left: 10px;">PV: <%= post.pv %></div>
+				</p>
+			</div>
+			<p style="margin-top: 30px"><%- post.post %></p>
+		</div>
+	</div>
+	<%- include comment %>
+</div>
 <%- include blogfooter %>

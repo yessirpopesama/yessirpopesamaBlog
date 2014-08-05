@@ -108,3 +108,9 @@ a.tags, .tags a {
 #subheader {
 	padding: 22px 50px 23px 50px !important;
 }
+.panel {
+	border-left: 4px solid #33877d;
+	margin-top: 20px;
+	width: 43.33%;
+	margin-left: 15px;
+}

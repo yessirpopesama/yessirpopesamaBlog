@@ -66,14 +66,18 @@
       <% }) %>
       <br class="clear"/>
       <br/><br/>
+
       <!-- MOST POPULAR POST -->
-      <h6 class="sidebartitle">POPULAR POSTS</h6>
-      <% popPosts.forEach(function(popPost, index){ %>
-      <% if (index < 4) { %>
-      <p><%= popPosts[index].time.day %></p>
-      <p><a href="/p/<%= popPost._id %>"><%= popPosts[index].title %></a></p>
-      <% } %>
-      <% }) %>
+      <div id="blog--popular"> 
+        <div id="blog--popularpanel">
+          <div id="blog--popular__title"><h6 class="sidebartitle">POPULAR POSTS</h6></div>
+          <% popPosts.forEach(function(popPost, index){ %>
+            <% if (index < 4) { %>
+              <div style="line-hight: 30px; padding-top:10px; padding-left: 20px; padding-bottom: 10px"><%= index+1 %>&nbsp&nbsp&nbsp<a href="/p/<%= popPost._id %>"><%= popPosts[index].title %>&nbsp&nbsp&nbsp</a><%= popPosts[index].name %>&nbsp&nbsp&nbsp<%= popPosts[index].time.day %></div>
+            <% } %>
+          <% }) %>
+        </div>
+      </div>
     </div>
   </div>
 </div>
