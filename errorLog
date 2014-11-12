@@ -1,80 +1,36 @@
-[Tue Jul 22 2014 15:43:25 GMT+0800 (中国标准时间)] /
-TypeError: E:\nodejs\node_programe\NBlog\views\index.ejs:71
-    69|       <h6 class="sidebartitle">POPULAR POSTS</h6>
-    70|       <p>
- >> 71|       <%= popPosts.time.day %>
-    72|       </p>
-    73|       <p> <%= popPosts.title %> </p>
-    74|       <p>
-
-Cannot read property 'day' of undefined
-    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:33:2950)
-    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:35:35)
-    at E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:255:15
-    at Object.exports.render (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:293:13)
-    at View.exports.renderFile [as engine] (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:323:20)
-    at View.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\view.js:76:8)
-    at Function.app.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\application.js:504:10)
-    at ServerResponse.res.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\response.js:798:7)
-    at E:\nodejs\node_programe\NBlog\routes\index.js:43:9
-    at E:\nodejs\node_programe\NBlog\models\post.js:190:5
-[Tue Jul 22 2014 15:46:48 GMT+0800 (中国标准时间)] /
-TypeError: E:\nodejs\node_programe\NBlog\views\index.ejs:71
-    69|       <h6 class="sidebartitle">POPULAR POSTS</h6>
-    70|       <p>
- >> 71|       <%= popPosts.time.year %>
-    72|       </p>
-    73|       <p> <%= popPosts.title %> </p>
-    74|       <p>
-
-Cannot read property 'year' of undefined
-    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:33:2950)
-    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:35:35)
-    at E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:255:15
-    at Object.exports.render (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:293:13)
-    at View.exports.renderFile [as engine] (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:323:20)
-    at View.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\view.js:76:8)
-    at Function.app.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\application.js:504:10)
-    at ServerResponse.res.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\response.js:798:7)
-    at E:\nodejs\node_programe\NBlog\routes\index.js:43:9
-    at E:\nodejs\node_programe\NBlog\models\post.js:190:5
-[Tue Jul 22 2014 15:48:19 GMT+0800 (中国标准时间)] /
-TypeError: E:\nodejs\node_programe\NBlog\views\index.ejs:71
-    69|       <h6 class="sidebartitle">POPULAR POSTS</h6>
-    70|       <p>
- >> 71|       <%= popPosts.time.year %>
-    72|       </p>
-    73|       <p> <%= popPosts.title %> </p>
-    74|       <p>
-
-Cannot read property 'year' of undefined
-    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:33:2950)
-    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:35:35)
-    at E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:255:15
-    at Object.exports.render (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:293:13)
-    at View.exports.renderFile [as engine] (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:323:20)
-    at View.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\view.js:76:8)
-    at Function.app.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\application.js:504:10)
-    at ServerResponse.res.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\response.js:798:7)
-    at E:\nodejs\node_programe\NBlog\routes\index.js:44:9
-    at E:\nodejs\node_programe\NBlog\models\post.js:190:5
-[Tue Jul 22 2014 15:48:32 GMT+0800 (中国标准时间)] /
-TypeError: E:\nodejs\node_programe\NBlog\views\index.ejs:71
-    69|       <h6 class="sidebartitle">POPULAR POSTS</h6>
-    70|       <p>
- >> 71|       <%= popPosts.time.year %>
-    72|       </p>
-    73|       <p> <%= popPosts.title %> </p>
-    74|       <p>
-
-Cannot read property 'year' of undefined
-    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:33:2950)
-    at eval (eval at <anonymous> (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:242:14), <anonymous>:35:35)
-    at E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:255:15
-    at Object.exports.render (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:293:13)
-    at View.exports.renderFile [as engine] (E:\nodejs\node_programe\NBlog\node_modules\ejs\lib\ejs.js:323:20)
-    at View.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\view.js:76:8)
-    at Function.app.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\application.js:504:10)
-    at ServerResponse.res.render (E:\nodejs\node_programe\NBlog\node_modules\express\lib\response.js:798:7)
-    at E:\nodejs\node_programe\NBlog\routes\index.js:44:9
-    at E:\nodejs\node_programe\NBlog\models\post.js:190:5
+[Wed Nov 12 2014 15:42:32 GMT+0800 (中国标准时间)] /stylesheets/zerogrid.css
+Error: Failed to lookup view "error" in views directory "E:\nodejs\node_programe\NBlog-v4.0\views"
+    at Function.app.render (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\application.js:516:17)
+    at ServerResponse.res.render [as partial] (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\response.js:900:7)
+    at ServerResponse.res.render (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express-partials\index.js:58:9)
+    at app.use.meta (E:\nodejs\node_programe\NBlog-v4.0\app.js:89:7)
+    at Layer.handle_error (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\layer.js:58:5)
+    at trim_prefix (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:268:13)
+    at E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:237:9
+    at Function.proto.process_params (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:312:12)
+    at E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:295:3)
+[Wed Nov 12 2014 15:42:56 GMT+0800 (中国标准时间)] /stylesheets/zerogrid.css
+Error: Failed to lookup view "error" in views directory "E:\nodejs\node_programe\NBlog-v4.0\views"
+    at Function.app.render (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\application.js:516:17)
+    at ServerResponse.res.render [as partial] (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\response.js:900:7)
+    at ServerResponse.res.render (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express-partials\index.js:58:9)
+    at app.use.meta (E:\nodejs\node_programe\NBlog-v4.0\app.js:89:7)
+    at Layer.handle_error (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\layer.js:58:5)
+    at trim_prefix (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:268:13)
+    at E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:237:9
+    at Function.proto.process_params (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:312:12)
+    at E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:295:3)
+[Wed Nov 12 2014 15:43:17 GMT+0800 (中国标准时间)] /stylesheets/zerogrid.css
+Error: Failed to lookup view "error" in views directory "E:\nodejs\node_programe\NBlog-v4.0\views"
+    at Function.app.render (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\application.js:516:17)
+    at ServerResponse.res.render [as partial] (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\response.js:900:7)
+    at ServerResponse.res.render (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express-partials\index.js:58:9)
+    at app.use.meta (E:\nodejs\node_programe\NBlog-v4.0\app.js:89:7)
+    at Layer.handle_error (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\layer.js:58:5)
+    at trim_prefix (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:268:13)
+    at E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:237:9
+    at Function.proto.process_params (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:312:12)
+    at E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:228:12
+    at Function.match_layer (E:\nodejs\node_programe\NBlog-v4.0\node_modules\express\lib\router\index.js:295:3)

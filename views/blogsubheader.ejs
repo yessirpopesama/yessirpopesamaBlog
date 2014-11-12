@@ -1,19 +1,20 @@
-<!-- SUBHEADER
-================================================== -->
 <!--======== Navigator ======== -->
 <div id="navigator">
-  <ul id="navList">
-    <li><a href="/" class="menu" title="首页">首页</a></li>
-    <li><a href="/achive" class="menu" title="博客存档">博客存档</a></li>
-    <li><a href="/viewpic" class="menu" title="图片墙">图片墙</a></li>
-    <% if (user) { %>
-    <li><a title="发表" class="menu" href="/post">发表博文</a></li>
-    <li><a title="上传" class="menu" href="/upload">图片上传</a></li>
-    <li><a title="登出" class="menu" href="/logout">登出</a></li>
-    <% } else { %>
-    <li><a title="登录" class="menu" href="/login">登录</a></li>
-    <li><a title="注册" class="menu" href="/reg">注册</a></li>
-    <% } %>
-    <li><a title="联系我" class="menu" href="#">联系</a></li>
-  </ul>
+    <div class="navi_container">
+        <a class="navi_title">Yes Sir Popesama's Blog</a>
+        <ul id="navi_list">
+            <li><a href="/" class="menu" title="首页">首页</a></li>
+            <li><a href="/achive" class="menu" title="博客存档">博客存档</a></li>
+            <li><a href="/viewpic" class="menu" title="图片墙">图片墙</a></li>
+            <% if (user) { %>
+            <li><a title="发表" class="menu" href="/post">发表博文</a></li>
+            <li><a title="上传" class="menu" href="/upload">图片上传</a></li>
+            <li><a title="登出" class="menu" href="/logout">登出</a></li>
+            <% } else { %>
+            <li><a title="登录" class="menu" href="/login">登录</a></li>
+            <li><a title="注册" class="menu" href="/reg">注册</a></li>
+            <% } %>
+            <li><a title="联系我" class="menu" href="#">联系</a></li>
+        </ul>
+    </div>
 </div>

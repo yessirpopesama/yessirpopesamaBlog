@@ -1,0 +1,57 @@
+{
+  "name": "smtp-connection",
+  "version": "1.0.2",
+  "description": "Connect to SMTP servers",
+  "main": "src/smtp-connection.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "grunt"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/andris9/smtp-connection.git"
+  },
+  "keywords": [
+    "SMTP"
+  ],
+  "author": {
+    "name": "Andris Reinman"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andris9/smtp-connection/issues"
+  },
+  "homepage": "https://github.com/andris9/smtp-connection",
+  "devDependencies": {
+    "chai": "^1.9.2",
+    "grunt": "^0.4.5",
+    "grunt-contrib-jshint": "^0.10.0",
+    "grunt-mocha-test": "^0.12.1",
+    "mocha": "^1.21.5",
+    "simplesmtp": "^0.3.33",
+    "sinon": "^1.10.3",
+    "xoauth2": "^1.0.0"
+  },
+  "gitHead": "6fabafdbfbf6f566e9f8b71515632a44184a6f97",
+  "_id": "smtp-connection@1.0.2",
+  "_shasum": "1b7b179245b418d24f37eccecfa1b1f2e752d680",
+  "_from": "smtp-connection@^1.0.0",
+  "_npmVersion": "1.4.28",
+  "_npmUser": {
+    "name": "andris",
+    "email": "andris@node.ee"
+  },
+  "maintainers": [
+    {
+      "name": "andris",
+      "email": "andris@node.ee"
+    }
+  ],
+  "dist": {
+    "shasum": "1b7b179245b418d24f37eccecfa1b1f2e752d680",
+    "tarball": "http://registry.npmjs.org/smtp-connection/-/smtp-connection-1.0.2.tgz"
+  },
+  "_resolved": "https://registry.npmjs.org/smtp-connection/-/smtp-connection-1.0.2.tgz"
+}

@@ -1,7 +1,7 @@
 <%- include blogheader %>
 <%- include blogsubheader %>
 <div class="row">
-	<ul class="blog--archive ">
+	<ul class="live number">
 		<% var lastYear = 0 %>
 		<% posts.forEach(function (post, index) { %>
 		<% if (lastYear != post.time.year) { %>
@@ -12,4 +12,6 @@
 		<% }) %>
 	</ul>
 </div>
+
+
 <%- include blogfooter %>
